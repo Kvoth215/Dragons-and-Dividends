@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Life Quest — Teacher's Guide</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Source Serif 4',Georgia,serif;font-size:13px;color:#1a0e00;background:#fff;line-height:1.6;}
+  .page{max-width:820px;margin:0 auto;padding:40px 48px;}
+  h1{font-family:'Playfair Display',serif;font-size:32px;color:#412402;letter-spacing:2px;margin-bottom:4px;}
+  h2{font-family:'Playfair Display',serif;font-size:20px;color:#412402;margin:28px 0 10px;border-bottom:2px solid #BA7517;padding-bottom:4px;}
+  h3{font-family:'Playfair Display',serif;font-size:15px;color:#633806;margin:16px 0 6px;}
+  h4{font-size:13px;font-weight:600;color:#854F0B;margin:10px 0 4px;}
+  p{margin-bottom:8px;}
+  .subtitle{font-size:14px;color:#854F0B;letter-spacing:1px;margin-bottom:6px;}
+  .meta{font-size:12px;color:#854F0B;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #BA751744;}
+  .badge{display:inline-block;font-size:11px;font-weight:600;padding:2px 10px;border-radius:10px;margin:2px 3px;}
+  .bm{background:#FAC77533;border:1px solid #BA7517;color:#633806;}
+  .bg{background:#C0DD9733;border:1px solid #3B6D11;color:#173404;}
+  .br{background:#F7C1C133;border:1px solid #A32D2D;color:#501313;}
+  .bb{background:#B5D4F433;border:1px solid #185FA5;color:#042C53;}
+  .bp{background:#E8D4F433;border:1px solid #7B2FBE;color:#3B0D6A;}
+  .quest-block{border:1.5px solid #BA7517;border-radius:6px;padding:16px 20px;margin-bottom:18px;background:#FAEEDA33;page-break-inside:avoid;}
+  .quest-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;flex-wrap:wrap;gap:6px;}
+  .answer-box{background:#EAF3DE;border:1.5px solid #3B6D11;border-radius:4px;padding:12px 14px;margin:8px 0;font-size:12px;}
+  .answer-box pre{font-family:'Source Serif 4',serif;white-space:pre-wrap;font-size:12px;line-height:1.7;}
+  .discussion{background:#FAEEDA;border-left:3px solid #BA7517;padding:8px 12px;margin:8px 0;font-size:12px;}
+  .tip-box{background:#F0E6FF;border:1px solid #7B2FBE;border-radius:4px;padding:10px 14px;margin:8px 0;font-size:12px;}
+  .event-table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0;}
+  .event-table th{background:#BA7517;color:#FAEEDA;padding:6px 10px;text-align:left;font-weight:600;}
+  .event-table td{padding:5px 10px;border-bottom:1px solid #BA751722;vertical-align:top;}
+  .event-table tr:nth-child(even){background:#FAEEDA33;}
+  .good{color:#3B6D11;font-weight:600;}.bad{color:#A32D2D;font-weight:600;}.neutral{color:#854F0B;}
+  .std-map{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0;}
+  .std-cell{border:1px solid #BA751755;border-radius:4px;padding:10px 12px;font-size:12px;}
+  .std-cell h4{margin-top:0;}
+  .warn{background:#FFF3CD;border:1px solid #856404;border-radius:4px;padding:8px 12px;font-size:12px;margin:8px 0;}
+  .toc{background:#FAEEDA55;border:1px solid #BA751755;border-radius:4px;padding:12px 16px;margin-bottom:20px;font-size:12px;}
+  .toc li{margin:3px 0;}
+  ul,ol{padding-left:20px;margin:6px 0;}
+  li{margin-bottom:3px;}
+  table.rubric{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0;}
+  table.rubric th{background:#633806;color:#FAEEDA;padding:6px 8px;text-align:left;}
+  table.rubric td{padding:5px 8px;border:1px solid #BA751755;vertical-align:top;}
+  table.rubric tr:nth-child(even){background:#FAEEDA22;}
+  .y2{border-color:#7B2FBE!important;background:#F0E6FF33!important;}
+  .y2 .quest-header span.badge{background:#E8D4F433;border-color:#7B2FBE;color:#3B0D6A;}
+  @media print{
+    body{font-size:12px;}
+    .page{padding:20px 24px;}
+    .quest-block{page-break-inside:avoid;}
+    h2{page-break-before:auto;}
+    .no-print{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+  <div>
+    <div class="subtitle">🏰 LIFE QUEST — PERSONAL FINANCE SIMULATION</div>
+    <h1>Teacher's Complete Guide</h1>
+    <p class="subtitle" style="margin-top:4px">Quest Answers · PA Standards · Discussion Questions · Differentiation</p>
+  </div>
+  <div style="text-align:right;font-size:11px;color:#854F0B;margin-top:8px">
+    <div>School: _______________________</div>
+    <div style="margin-top:4px">Teacher: _______________________</div>
+    <div style="margin-top:4px">Subject: _______________________</div>
+    <div style="margin-top:4px">Grade: _______________________</div>
+  </div>
+</div>
+<div class="meta">
+  Aligned to PA Academic Standards for Personal Finance (22 Pa. Code Ch. 4, Appendix F) · Effective July 1, 2026 · Grades 6–8 &amp; 9–12 Extensions &nbsp;|&nbsp;
+  Cross-curricular: Math · ELA · Social Studies · Science &nbsp;|&nbsp;
+  <strong>NOT FOR STUDENT DISTRIBUTION</strong>
+</div>
+
+<div class="toc">
+  <strong>📋 Contents:</strong>
+  <ol style="columns:2;column-gap:24px;">
+    <li>Overview &amp; Setup</li>
+    <li>Life Paths Reference</li>
+    <li>Year 1 Quest Answers (11 Quests)</li>
+    <li>Year 2 Hard Mode Quest Answers (5 Quests)</li>
+    <li>Random Events Reference</li>
+    <li>Cross-Curricular Connections</li>
+    <li>ELA Writing Rubric</li>
+    <li>Discussion Questions by Month</li>
+    <li>Differentiation Strategies</li>
+    <li>PA Standards Alignment Chart</li>
+  </ol>
+</div>
+
+<!-- SECTION 1: OVERVIEW -->
+<h2>1. Overview &amp; Classroom Setup</h2>
+<p><strong>Life Quest</strong> is a browser-based personal finance simulation played individually. Students choose a life path, manage a monthly budget over 12 simulated months, respond to random events (dice rolls), and must complete subject-area quests to advance. Progress saves automatically to the student's Claude.ai session.</p>
+<h4>Suggested Pacing (adjust to your schedule):</h4>
+<ul>
+  <li><strong>Session 1 (30–45 min):</strong> Intro, character creation, Months 1–2. Discuss life path choices as a class first.</li>
+  <li><strong>Sessions 2–4:</strong> Months 3–8. Pause at quest completion for class discussion.</li>
+  <li><strong>Session 5+:</strong> Months 9–12 and final results. Debrief &amp; compare outcomes.</li>
+  <li><strong>Year 2 (optional, advanced):</strong> Unlocks automatically after Year 1 completion.</li>
+</ul>
+<div class="tip-box">💡 <strong>Teaching tip:</strong> Before students begin, ask the class: "If you had to pick a life path today, which would you choose — and why?" The subsequent discussion previews nearly every standard in 17.2 (Income) organically.</div>
+
+<!-- SECTION 2: LIFE PATHS -->
+<h2>2. Life Path Reference Sheet</h2>
+<table class="event-table">
+  <tr><th>Path</th><th>Real-World Equivalent</th><th>Monthly Income</th><th>Starting Gold</th><th>Starting Debt</th><th>Special</th></tr>
+  <tr><td>⚔️ Knight of the Realm</td><td>Military Service</td><td>2,800gp</td><td>800gp</td><td>None</td><td>−200gp rent discount</td></tr>
+  <tr><td>🧙 Arcane Scholar</td><td>4-Year University</td><td>4,500gp</td><td>300gp</td><td>32,000gp</td><td>Min. debt payment 320gp/mo</td></tr>
+  <tr><td>🔨 Guild Artisan</td><td>Trade Apprenticeship</td><td>3,200gp</td><td>600gp</td><td>None</td><td>Highest short-term net worth</td></tr>
+  <tr><td>🎭 Wandering Bard</td><td>Entrepreneur/Freelancer</td><td>Variable*</td><td>400gp</td><td>3,000gp</td><td>Income swings 1,500–5,500gp</td></tr>
+  <tr><td>🏥 Village Healer</td><td>Community College</td><td>2,600gp</td><td>500gp</td><td>9,000gp</td><td>Min. debt payment 180gp/mo</td></tr>
+</table>
+<p style="font-size:11px;color:#854F0B">*Bard monthly income sequence: 2,200 / 3,800 / 1,600 / 5,200 / 1,900 / 4,100 / 2,800 / 1,500 / 5,500 / 3,200 / 2,000 / 4,400gp</p>
+<p><strong>Fixed Monthly Expenses (all paths):</strong> Lodgings 900gp (Knight: 700gp) · Provisions 350gp · Steed Upkeep 200gp · Utilities 110gp · King's Tax 22% of income. Minimum debt payments additional.</p>
+
+<!-- SECTION 3: YEAR 1 QUESTS -->
+<h2>3. Year 1 Quest Answers (Months 1–11)</h2>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 1 — The Merchant's Vault</strong> &nbsp;<span class="badge bm">Month 1</span></div>
+    <div><span class="badge bb">🔢 Math</span> <span class="badge bg">PA 17.4.6-8.C</span></div>
+  </div>
+  <p><em>Unlocks: Savings account feature. Students cannot save gold until this quest is passed.</em></p>
+  <p><strong>Question:</strong> You deposit 500gp at 4% annual interest. How many gold coins after 2 years?</p>
+  <div class="answer-box">
+    <pre>Year 1:  500 × 1.04 = 520gp
+Year 2:  520 × 1.04 = 540.8 ≈ 541gp
+
+ANSWER: 541gp  (accepted range: 539–543gp)
+
+Formula used: A = P(1 + r)^t  →  500(1.04)² = 500 × 1.0816 = 540.8</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "Why do banks pay you interest? What does the bank DO with your money while it's there?" Extend: What if the rate was 8%? What if you waited 10 years instead of 2?</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 2 — The Budget Proclamation</strong> &nbsp;<span class="badge bm">Month 2</span></div>
+    <div><span class="badge bp">📜 ELA</span> <span class="badge bg">PA 17.3.9-12.E</span></div>
+  </div>
+  <p><strong>Task:</strong> Write 4–6 sentences covering: (1) income source, (2) two biggest expenses, (3) savings amount and reason, (4) a specific 3-month financial goal.</p>
+  <div class="answer-box">
+    <pre>This is a writing quest — no single correct answer.
+See ELA Rubric (Section 7) for scoring guidance.
+
+REQUIRED ELEMENTS TO VERIFY:
+  ✅ Specific income source named (not just "money from work")
+  ✅ Two largest expenses identified (should be Lodgings + Tax or Provisions)
+  ✅ Savings amount stated WITH a reason (e.g., "I am saving 200gp/month
+     because I want to build an emergency fund for unexpected events")
+  ✅ 3-month goal is specific and measurable (includes a number!)
+
+TEACHER NOTE: Students who write "I want to save money" without specifying
+how much or why have NOT met the standard. Return for revision.
+
+Gold reward: 75gp (auto-awarded upon checklist confirmation)
+Stamp for review: YES — collect or discuss with student.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "What's the difference between 'I want to save money' and 'I will save 200gp/month for 3 months to reach 600gp'?" Connect to SMART goal-setting.</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 3 — The Scarcity Scroll</strong> &nbsp;<span class="badge bm">Month 3</span></div>
+    <div><span class="badge bm">🗺️ Social Studies</span> <span class="badge bg">PA 17.1.6-8.B &amp; 17.3.6-8.D</span></div>
+  </div>
+  <p><strong>Question:</strong> Provisions cost 20% more. Income 3,000gp, goal: save 500gp. How much must other expenses be cut?</p>
+  <div class="answer-box">
+    <pre>Original provisions:    700gp
+New provisions (×1.20): 840gp  (+140gp increase)
+
+Original total expenses: 2,500gp
+New total expenses:      2,640gp
+
+Maximum spending = Income − Savings goal = 3,000 − 500 = 2,500gp
+Must cut: 2,640 − 2,500 = 140gp
+
+ANSWER: 140gp  (accepted range: 135–145gp)
+
+This 140gp is the OPPORTUNITY COST of the drought —
+something else must be given up because provisions cost more.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "What would you cut first — transportation or entertainment? Why do different people make different choices?" This opens PA 17.1.6-8.B (opportunity cost differs by person/situation).</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 4 — The Candle Conspiracy</strong> &nbsp;<span class="badge bm">Month 4</span></div>
+    <div><span class="badge bb">⚗️ Science</span> <span class="badge bg">PA 17.3.9-12.K</span></div>
+  </div>
+  <p><strong>Question:</strong> Candles: 2gp each, 4-hour life, use 4hrs/day. Crystal Lamp: 80gp upfront, 0gp/day. Break-even in how many days?</p>
+  <div class="answer-box">
+    <pre>Candle use: 4 hrs/day ÷ 4 hrs/candle = 1 candle/day → 2gp/day
+Crystal Lamp cost stays fixed at 80gp (one-time purchase)
+
+Break-even equation:
+  Candle total cost = Lamp total cost
+  2gp × days = 80gp
+  days = 80 ÷ 2 = 40 days
+
+ANSWER: 40 days  (accepted range: 38–42 days)
+
+After day 40, the Crystal Lamp costs less every subsequent day.
+The Candle Guild's objections are financially irrelevant after day 40.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Science connection:</strong> Compare to real-world LED vs. incandescent bulb math. EPA data: LED lasts ~25x longer. Have students calculate the real-world break-even for their classroom lights.</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 5 — The Discount Dungeon</strong> &nbsp;<span class="badge bm">Month 5</span></div>
+    <div><span class="badge bb">🔢 Math</span> <span class="badge bg">PA 17.3.6-8.B &amp; 17.3.6-8.L</span></div>
+  </div>
+  <p><strong>Question:</strong> Armor costs 800gp. Apply 25% discount, then 8% sales tax. Final price?</p>
+  <div class="answer-box">
+    <pre>Step 1 — Apply discount FIRST:
+  Discount amount:    800 × 0.25 = 200gp off
+  Discounted price:   800 − 200 = 600gp
+
+Step 2 — Apply tax to DISCOUNTED price:
+  Tax amount:         600 × 0.08 = 48gp
+  Final price:        600 + 48 = 648gp
+
+ANSWER: 648gp  (accepted range: 645–651gp)
+
+COMMON ERROR: Applying tax to the original 800gp price (gives 666gp — wrong).
+Tax is always calculated on the price actually paid.
+Order matters. In life and in math.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "Which is better for the shopper — getting the discount before tax, or the tax before the discount? Does it actually matter mathematically?" (It doesn't — but let students discover this!)</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 6 — The Artificer's Dilemma</strong> &nbsp;<span class="badge bm">Month 6</span></div>
+    <div><span class="badge bb">⚗️ Science</span> <span class="badge bg">PA 17.3.9-12.K</span></div>
+  </div>
+  <p><strong>Question:</strong> Horse (30gp/mo + 200gp/yr) vs. Steam Cart (50gp/mo + 100gp/yr). Which is cheaper over 3 years, and by how much?</p>
+  <div class="answer-box">
+    <pre>Horse total:
+  Monthly: 30 × 36 months = 1,080gp
+  Annual:  200 × 3 years  =   600gp
+  TOTAL:                     1,680gp
+
+Steam Cart total:
+  Monthly: 50 × 36 months = 1,800gp
+  Annual:  100 × 3 years  =   300gp
+  TOTAL:                     2,100gp
+
+Difference: 2,100 − 1,680 = 420gp
+
+ANSWER: Horse is cheaper, by 420gp  (accepted: Horse + 415–425gp)
+
+Concept: Total Cost of Ownership — the true cost of a purchase includes
+all ongoing costs, not just the purchase price. Real-world: car leases,
+phone plans, subscriptions all use this principle against consumers.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Science/Math connection:</strong> "What other factors should be considered that we didn't calculate?" (reliability, resale value, environmental impact, depreciation). PA 17.3.9-12.A — informed spending decisions.</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 7 — The Complaint Scroll</strong> &nbsp;<span class="badge bm">Month 7</span></div>
+    <div><span class="badge bp">📜 ELA</span> <span class="badge bg">PA 17.6.6-8.G</span></div>
+  </div>
+  <p><strong>Task:</strong> Write a formal complaint (4–6 sentences): what was purchased/promised, what was received, resolution requested, why consumer protection matters.</p>
+  <div class="answer-box">
+    <pre>REQUIRED ELEMENTS TO VERIFY:
+  ✅ Product/service named AND what was specifically promised
+  ✅ What was actually received — the gap between promise and reality
+  ✅ Specific resolution requested (refund? replacement? apology? all three?)
+  ✅ Connection to why consumer rights/fair business practices exist
+
+QUALITY INDICATORS:
+  Strong: "I request a full refund of 200gp within 14 days, as the
+          Consumer Protection Charter requires merchants to honor product claims."
+  Weak:   "I want my money back because it was unfair."
+
+The goal is formal register and specific claims — not emotional venting.
+This mirrors real consumer complaint letters (FTC, BBB, etc.)
+
+Gold reward: 90gp (auto-awarded upon checklist confirmation)</pre>
+  </div>
+  <div class="discussion">💬 <strong>Real-world extension:</strong> Show students the FTC complaint process at reportfraud.ftc.gov. Have them identify which consumer protection law applies to their fictional scroll.</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 8 — The Moneylender's Maze</strong> &nbsp;<span class="badge bm">Month 8</span></div>
+    <div><span class="badge bb">🔢 Math</span> <span class="badge bg">PA 17.6.6-8.E</span></div>
+  </div>
+  <p><strong>Question:</strong> Felgar: 600gp at 5%/mo for 6 months, 115gp/mo payment. Roderick: 600gp + 10% fee, repay 660gp total. How much more does Felgar cost?</p>
+  <div class="answer-box">
+    <pre>Friendly Felgar total:
+  115gp × 6 payments = 690gp
+
+Reasonable Roderick total:
+  600gp + (600 × 0.10) = 600 + 60 = 660gp
+
+Difference: 690 − 660 = 30gp
+
+ANSWER: Felgar costs 30gp more  (accepted range: 27–33gp)
+
+KEY INSIGHT: Monthly rates that "look small" compound quickly.
+5%/month sounds modest. But 5% × 12 = 60% annual rate.
+This is predatory lending territory. Roderick's "10% fee" = ~20% annual.
+Both are expensive — Roderick is merely the lesser of two evils.
+
+Real-world: payday loans average 400% APR. Credit cards: 20–30% APR.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "Which moneylender sounds friendlier in their ad? Which IS friendlier mathematically?" This is exactly how predatory lenders work — friendly branding, brutal math.</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 9 — The King's Ledger</strong> &nbsp;<span class="badge bm">Month 9</span></div>
+    <div><span class="badge bm">🗺️ Social Studies</span> <span class="badge bg">PA 17.3.9-12.L</span></div>
+  </div>
+  <p><strong>Question:</strong> Kingdom collects 10,000gp. Roads 25%, Healthcare 30%, Defense 20%, Schools 15%, Remaining ?%. How much goes to Schools?</p>
+  <div class="answer-box">
+    <pre>Schools of Learning:
+  10,000 × 0.15 = 1,500gp
+
+ANSWER: 1,500gp  (accepted range: 1,450–1,550gp)
+
+BONUS (no calculation needed):
+  Remaining %: 100 − 25 − 30 − 20 − 15 = 10%
+  Remaining gold: 10,000 × 0.10 = 1,000gp (the Royal Reserve)
+
+REAL-WORLD CONNECTION:
+  PA state budget spends roughly 40% on education, 35% on health/human
+  services, 15% on debt/pensions, 10% on other programs.
+  Ask: Is 15% on schools enough? What would students cut or add?</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "If you were the King and had to cut one category by 5%, which would you cut — and what would the consequences be?" This is real budget trade-off thinking (PA 17.1.6-8.B).</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 10 — The Sunstone Summit</strong> &nbsp;<span class="badge bm">Month 10</span></div>
+    <div><span class="badge bb">⚗️ Science</span> <span class="badge bg">PA 17.3.9-12.K</span></div>
+  </div>
+  <p><strong>Question:</strong> Coalstone 80gp/mo, Sunstone 20gp/mo + 1,200gp setup. Break-even in how many months?</p>
+  <div class="answer-box">
+    <pre>Monthly savings by switching to Sunstone:
+  80 − 20 = 60gp saved per month
+
+Break-even calculation:
+  Setup cost ÷ Monthly savings = 1,200 ÷ 60 = 20 months
+
+ANSWER: 20 months  (accepted range: 19–21 months)
+
+After month 20, Sunstone saves 60gp every single month — forever.
+Over 10 years (120 months): saves 6,000gp total.
+The 1,200gp investment returns 5× in a decade.
+
+REAL-WORLD CONNECTION:
+  Average US home solar payback: 6–12 years.
+  Average monthly savings after payback: $50–$150.
+  This is why renewable energy is increasingly a financial decision,
+  not just an environmental one. The Coalstone Guild's days are numbered.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Science extension:</strong> Research current Pennsylvania solar incentives and rebate programs. Calculate whether solar would break even faster with a 30% federal tax credit applied.</div>
+</div>
+
+<div class="quest-block">
+  <div class="quest-header">
+    <div><strong>Quest 11 — The Final Chronicle</strong> &nbsp;<span class="badge bm">Month 11</span></div>
+    <div><span class="badge bp">📜 ELA</span> <span class="badge bg">PA 17.1.9-12.A</span></div>
+  </div>
+  <p><strong>Task:</strong> Financial reflection (5–7 sentences): best decision, a challenge/surprise, one thing to do differently, specific goal for next year (with number).</p>
+  <div class="answer-box">
+    <pre>REQUIRED ELEMENTS TO VERIFY:
+  ✅ Best decision identified AND explained (not just named — why did it work?)
+  ✅ Challenge/surprise described with specific budget impact (how many gp?)
+  ✅ "Would do differently" is substantive and reasoned, not vague
+  ✅ Next-year goal is SPECIFIC and NUMBERED ("save 3,000gp" not "save more")
+
+HIGHEST-QUALITY RESPONSES will:
+  — Connect a random event to a financial concept (e.g., "The dragon attack
+    taught me why emergency funds matter, so next year I'll save 200gp/mo
+    into my Vault before spending any disposable gold")
+  — Show cause-and-effect thinking about their own decisions
+  — Set a goal that responds to their actual Year 1 results
+
+This is the summative writing assessment for Year 1.
+Strongly consider requiring students to read this aloud or share in pairs.
+
+Gold reward: 150gp (auto-awarded upon checklist confirmation)</pre>
+  </div>
+  <div class="tip-box">💡 <strong>Assessment idea:</strong> Collect Final Chronicles as a portfolio piece. Compare to Budget Proclamation (Quest 2) to show growth in financial vocabulary and thinking sophistication over the year.</div>
+</div>
+
+<!-- SECTION 4: YEAR 2 QUESTS -->
+<h2>4. Year 2 Hard Mode Quest Answers (Months 13–17)</h2>
+<p><em>Year 2 unlocks automatically after completing Year 1. Income increases 5% (modest raise) but rent rises 200gp (landlord), creating tighter margins. Events are more volatile. Five new quests with harder math and deeper writing prompts.</em></p>
+
+<div class="quest-block y2">
+  <div class="quest-header">
+    <div><strong>Quest 12 — The Debt Dragon</strong> &nbsp;<span class="badge bp">Month 13</span></div>
+    <div><span class="badge bb">🔢 Math</span> <span class="badge bg">PA 17.6.9-12.E</span></div>
+  </div>
+  <p><strong>Question:</strong> You borrowed 5,000gp at 18% annual interest. You pay only the minimum (2% of balance/month). How much do you owe after 3 months?</p>
+  <div class="answer-box">
+    <pre>Monthly interest rate: 18% ÷ 12 = 1.5% per month
+
+Month 1:
+  Interest:      5,000 × 0.015 =   75gp
+  Min. payment:  5,000 × 0.02  =  100gp
+  Paid toward principal: 100 − 75 = 25gp
+  New balance:   5,000 − 25    = 4,975gp
+
+Month 2:
+  Interest:      4,975 × 0.015 = 74.63gp ≈ 75gp
+  Min. payment:  4,975 × 0.02  = 99.50gp ≈ 100gp
+  Paid toward principal: ≈ 25gp
+  New balance:   ≈ 4,950gp
+
+Month 3:
+  New balance:   ≈ 4,925gp
+
+ANSWER: Approximately 4,925gp  (accepted range: 4,900–4,950gp)
+
+KEY LESSON: After 3 months paying 300gp, balance only dropped 75gp.
+That is 225gp paid in interest — 75% of payments went to interest.
+This is the minimum payment trap. The Debt Dragon eats most of your gold.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "At this rate, how many years to pay off 5,000gp?" (Answer: over 30 years). Credit card minimum payment traps are the #1 personal finance trap for young adults.</div>
+</div>
+
+<div class="quest-block y2">
+  <div class="quest-header">
+    <div><strong>Quest 13 — The Portfolio Parchment</strong> &nbsp;<span class="badge bp">Month 14</span></div>
+    <div><span class="badge bp">📜 ELA</span> <span class="badge bg">PA 17.4.9-12.H</span></div>
+  </div>
+  <p><strong>Task:</strong> Write an investment portfolio recommendation (5–7 sentences) for a 28-year-old with moderate risk tolerance, 30-year time horizon, and 500gp/month to invest.</p>
+  <div class="answer-box">
+    <pre>REQUIRED ELEMENTS TO VERIFY:
+  ✅ At least TWO different investment types mentioned (stocks, bonds,
+     mutual funds, index funds, real estate, etc.)
+  ✅ Reasoning connects to time horizon (30 years = can weather volatility)
+  ✅ Risk tolerance addressed explicitly — "moderate" means neither all stocks
+     nor all bonds; some balance explained
+  ✅ Diversification concept present (not all eggs in one basket)
+
+QUALITY INDICATORS:
+  Strong: "With a 30-year horizon, I recommend 70% in a broad stock index
+          fund (higher growth potential, time to recover from downturns),
+          25% in bond funds (stability and income), and 5% in cash savings
+          for flexibility. At 500gp/month, compound growth over 30 years
+          at 7% average return would grow to approximately 566,000gp."
+  Weak:   "Put it in stocks because they make money."
+
+NOTE: Students may not know exact return rates — that's fine. The reasoning
+process is the assessment target. PA 17.4.9-12.H is about recommendation
+quality, not calculation precision.
+
+Gold reward: 175gp</pre>
+  </div>
+</div>
+
+<div class="quest-block y2">
+  <div class="quest-header">
+    <div><strong>Quest 14 — The Great Career Calculus</strong> &nbsp;<span class="badge bp">Month 15</span></div>
+    <div><span class="badge bm">🗺️ Social Studies</span> <span class="badge bg">PA 17.2.9-12.C</span></div>
+  </div>
+  <p><strong>Question:</strong> Path A earns 38,000gp/yr with no debt. Path B earns 58,000gp/yr with 45,000gp debt (repaid at 500gp/mo). How many years until Path B's cumulative net earnings exceed Path A's?</p>
+  <div class="answer-box">
+    <pre>Path A net earnings per year: 38,000gp (no debt costs)
+
+Path B net earnings per year: 58,000 − (500 × 12) = 58,000 − 6,000 = 52,000gp
+(during repayment period)
+
+Debt payoff time: 45,000 ÷ 6,000/yr ≈ 7.5 years
+
+During repayment (Years 1–7.5):
+  Path A cumulative: 38,000 × 7.5 = 285,000gp
+  Path B cumulative: 52,000 × 7.5 = 390,000gp
+  
+Path B is ALREADY ahead by 105,000gp after 7.5 years.
+
+ANSWER: Path B exceeds Path A immediately — from Year 1.
+(52,000 > 38,000 even with debt payments)
+
+NUANCE QUESTION FOR CLASS: What if Path B's income was only 42,000gp?
+  Path B net: 42,000 − 6,000 = 36,000/yr (LESS than Path A during repayment)
+  Break-even: Path B catches up after debt is paid off (~year 10)
+
+This demonstrates why income LEVEL matters as much as debt AMOUNT.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "Under what circumstances does the expensive education NOT pay off?" Connect to PA data on earnings by credential level (PA Dept. of Labor publishes this annually).</div>
+</div>
+
+<div class="quest-block y2">
+  <div class="quest-header">
+    <div><strong>Quest 15 — The Tax Tribunal</strong> &nbsp;<span class="badge bp">Month 16</span></div>
+    <div><span class="badge bb">🔢 Math</span> <span class="badge bg">PA 17.2.9-12.H &amp; 17.3.9-12.L</span></div>
+  </div>
+  <p><strong>Question:</strong> Gross income 54,000gp/yr. Federal tax: 10% on first 11,000; 12% on 11,001–44,725; 22% on amount above 44,725. Calculate total federal tax owed.</p>
+  <div class="answer-box">
+    <pre>This is a PROGRESSIVE (graduated) tax bracket calculation.
+Each bracket taxes only the income IN that range.
+
+Bracket 1 (10%):  11,000 × 0.10          = 1,100gp
+Bracket 2 (12%):  (44,725 − 11,000) × 0.12
+                = 33,725 × 0.12           = 4,047gp
+Bracket 3 (22%):  (54,000 − 44,725) × 0.22
+                =  9,275 × 0.22           = 2,040.50gp ≈ 2,041gp
+
+TOTAL FEDERAL TAX: 1,100 + 4,047 + 2,041 = 7,188gp
+
+ANSWER: 7,188gp  (accepted range: 7,100–7,275gp)
+
+Effective tax rate: 7,188 ÷ 54,000 = 13.3%
+(Much lower than the 22% marginal rate — a common misconception!)
+
+COMMON STUDENT ERROR: Applying 22% to the entire 54,000 (gives 11,880 — wrong).
+This is the most important thing to correct. The 22% bracket only applies
+to income ABOVE $44,725.</pre>
+  </div>
+  <div class="tip-box">💡 <strong>PA connection:</strong> Pennsylvania has a flat state income tax of 3.07% (as of 2024). Have students add this to their federal calculation for a realistic total tax burden.</div>
+</div>
+
+<div class="quest-block y2">
+  <div class="quest-header">
+    <div><strong>Quest 16 — The Net Worth Reckoning</strong> &nbsp;<span class="badge bp">Month 17</span></div>
+    <div><span class="badge bb">🔢 Math</span> <span class="badge bg">PA 17.4.9-12.A</span></div>
+  </div>
+  <p><strong>Question:</strong> Calculate net worth. Assets: Home 180,000gp, Car 12,000gp, Vault Savings 8,500gp, Investment Account 22,000gp. Liabilities: Mortgage 145,000gp, Car Loan 7,200gp, Credit Card Debt 2,400gp.</p>
+  <div class="answer-box">
+    <pre>ASSETS (what you own):
+  Home value:           180,000gp
+  Car:                   12,000gp
+  Vault Savings:          8,500gp
+  Investment Account:    22,000gp
+  TOTAL ASSETS:         222,500gp
+
+LIABILITIES (what you owe):
+  Mortgage:             145,000gp
+  Car Loan:               7,200gp
+  Credit Card:            2,400gp
+  TOTAL LIABILITIES:    154,600gp
+
+NET WORTH = Total Assets − Total Liabilities
+          = 222,500 − 154,600 = 67,900gp
+
+ANSWER: 67,900gp  (accepted range: 67,500–68,300gp)
+
+INTERPRETATION GUIDE:
+  Positive net worth = you own more than you owe ✅
+  The home equity (180,000 − 145,000 = 35,000gp) is the largest
+  component — which is typical for most middle-class Americans.
+
+Extension: If home values DROP 10%, what happens to net worth?
+  New home value: 162,000. New net worth: 62,500 − 7,400 = 49,900gp.
+  A 10% home price drop causes a 26% net worth drop. Housing risk is real.</pre>
+  </div>
+  <div class="discussion">💬 <strong>Discussion:</strong> "Is a high net worth always good? What if all your net worth is tied up in your home and it's not liquid?" Connect to the 2008 housing crisis.</div>
+</div>
+
+<!-- SECTION 5: RANDOM EVENTS -->
+<h2>5. Random Events Reference</h2>
+<p>Events are drawn randomly each month. Each includes a teaching hook tied to PA standards. Use event moments as class discussion pause points.</p>
+
+<h3>Year 1 Events</h3>
+<table class="event-table">
+  <tr><th>Event</th><th>Gold Effect</th><th>Teaching Hook</th><th>Standard</th></tr>
+  <tr><td>🦷 Molar Catastrophe!</td><td class="bad">−350gp</td><td>Emergency funds vs. medical debt</td><td>17.5.3-5.B</td></tr>
+  <tr><td>🐉 Unauthorized Dragon Renovation</td><td class="bad">−420gp</td><td>Homeowner's insurance &amp; property damage</td><td>17.5.3-5.B</td></tr>
+  <tr><td>🔧 Axle Me Anything</td><td class="bad">−300gp</td><td>Transportation costs &amp; budgeting for repairs</td><td>17.3.6-8.A</td></tr>
+  <tr><td>🦹 Rogue Redistribution of Wealth</td><td class="bad">−220gp</td><td>Financial fraud &amp; identity protection</td><td>17.5.6-8.H</td></tr>
+  <tr><td>🌧️ Sick Day(s): The Budget Edition</td><td class="bad">−380gp</td><td>Disability coverage &amp; sick leave value</td><td>17.2.9-12.F</td></tr>
+  <tr><td>📦 Inflation: Here, Real, Annoying</td><td class="bad">−130gp</td><td>Inflation &amp; purchasing power over time</td><td>17.1.6-8.B</td></tr>
+  <tr><td>⭐ Turns Out Good Work Pays Off</td><td class="good">+500gp</td><td>Windfall strategy: debt vs. savings vs. spend</td><td>17.4.6-8.B</td></tr>
+  <tr><td>🍄 Side Hustle: Origin Story</td><td class="good">+180gp</td><td>Supplemental income &amp; entrepreneurship</td><td>17.2.6-8.G</td></tr>
+  <tr><td>🎁 Uncle Bartholomew Delivers Again</td><td class="good">+400gp</td><td>Gift/inheritance &amp; smart windfall use</td><td>17.4.6-8.B</td></tr>
+  <tr><td>🏪 Price Comparison: A Victory</td><td class="good">+90gp</td><td>Comparison shopping as a skill</td><td>17.3.6-8.B</td></tr>
+  <tr><td>🎉 FOMO Financially Obliterates Objectives</td><td class="bad">−170gp</td><td>Behavioral bias: impulsive spending</td><td>17.1.6-8.D</td></tr>
+  <tr><td>☁️ Peak Boring Month. Best Month.</td><td class="neutral">0gp</td><td>Consistency beats excitement in finance</td><td>17.4.6-8.B</td></tr>
+</table>
+
+<h3>Year 2 Events (More Volatile)</h3>
+<table class="event-table">
+  <tr><th>Event</th><th>Gold Effect</th><th>Teaching Hook</th><th>Standard</th></tr>
+  <tr><td>📉 The Market Took a Tumble</td><td class="bad">−15% savings</td><td>Investment risk &amp; market volatility</td><td>17.4.6-8.J</td></tr>
+  <tr><td>🔥 Kitchen Catastrophe (Uninsured)</td><td class="bad">−900gp</td><td>Renter's vs. homeowner's insurance gap</td><td>17.5.6-8.C</td></tr>
+  <tr><td>💼 The Promotion Arrives!</td><td class="good">+1,200gp bonus</td><td>Income increase strategy &amp; lifestyle creep</td><td>17.2.6-8.A</td></tr>
+  <tr><td>🦠 The Second Plague Season</td><td class="bad">−600gp</td><td>Health insurance &amp; out-of-pocket maximums</td><td>17.5.6-8.C</td></tr>
+  <tr><td>📈 Dividend Day!</td><td class="good">+350gp</td><td>Passive income &amp; dividend investing</td><td>17.4.6-8.G</td></tr>
+  <tr><td>🏠 Landlord's Annual "Surprise"</td><td class="bad">−200gp/mo (1 mo)</td><td>Rent increases &amp; housing market</td><td>17.3.9-12.J</td></tr>
+  <tr><td>💸 The Crown Returns Overpaid Tax</td><td class="good">+480gp</td><td>Tax refunds — windfall or poor planning?</td><td>17.2.9-12.H</td></tr>
+  <tr><td>🆔 Identity Theft Strikes</td><td class="bad">−850gp</td><td>Identity theft recovery &amp; credit monitoring</td><td>17.5.9-12.I</td></tr>
+  <tr><td>🌊 Flooding in the Lower District</td><td class="bad">−750gp</td><td>Flood insurance &amp; climate financial risk</td><td>17.5.6-8.A</td></tr>
+  <tr><td>🎰 Merchant Guild Audit (You're Fine)</td><td class="neutral">0gp</td><td>Financial record-keeping importance</td><td>17.1.6-8.I</td></tr>
+  <tr><td>🏆 Investment Matures Ahead of Schedule</td><td class="good">+900gp</td><td>Long-term investing payoff</td><td>17.4.6-8.G</td></tr>
+  <tr><td>🤝 Business Partnership Offer</td><td class="good">+650gp</td><td>Entrepreneurship &amp; partnership risk/reward</td><td>17.2.9-12.G</td></tr>
+</table>
+
+<!-- SECTION 6: CROSS-CURRICULAR -->
+<h2>6. Cross-Curricular Connections</h2>
+<div class="std-map">
+  <div class="std-cell">
+    <h4>🔢 Math Teacher Notes</h4>
+    <p>Quests 1, 5, 8, 12, 15, 16 are yours. All use arithmetic through pre-algebra. Quest 12 introduces iterative calculations (minimum payment trap) — good for spreadsheet extension. Quest 15 (tax brackets) is the most complex — preview with a simpler 2-bracket example first.</p>
+  </div>
+  <div class="std-cell">
+    <h4>📜 ELA Teacher Notes</h4>
+    <p>Quests 2, 7, 11, 13 are yours. Focus on formal register, specific claims, and evidence-based reasoning. The Complaint Scroll (Quest 7) connects to argument writing standards. Final Chronicle (Quest 11) is reflective narrative — consider pairing with a goal-setting journal unit.</p>
+  </div>
+  <div class="std-cell">
+    <h4>🗺️ Social Studies Teacher Notes</h4>
+    <p>Quests 3, 9, 14 are yours. Quest 3 (scarcity) pairs directly with any economics unit. Quest 9 (government budgets) connects to civics and public policy. Quest 14 (career ROI) is excellent for career exploration units — pair with PA labor market data.</p>
+  </div>
+  <div class="std-cell">
+    <h4>⚗️ Science Teacher Notes</h4>
+    <p>Quests 4, 6, 10 are yours. Quest 4 (candle break-even) connects to energy units. Quest 6 (total cost of ownership) connects to engineering design trade-offs. Quest 10 (renewable energy break-even) pairs with any energy sources unit — use real PA solar data for extension.</p>
+  </div>
+</div>
+
+<!-- SECTION 7: ELA RUBRIC -->
+<h2>7. ELA Writing Quest Rubric</h2>
+<table class="rubric">
+  <tr><th>Criterion</th><th>3 — Exemplary</th><th>2 — Proficient</th><th>1 — Developing</th></tr>
+  <tr><td><strong>Content Completeness</strong></td><td>All required elements present with specific details and numbers</td><td>All required elements present; some lack specificity</td><td>One or more required elements missing or too vague</td></tr>
+  <tr><td><strong>Financial Literacy</strong></td><td>Demonstrates clear understanding of concept; uses correct financial vocabulary</td><td>Shows basic understanding; vocabulary partially correct</td><td>Misunderstands the concept or uses incorrect vocabulary</td></tr>
+  <tr><td><strong>Formal Register</strong></td><td>Consistently formal tone appropriate for audience (Herald, Guild, Chronicler)</td><td>Mostly formal with minor lapses</td><td>Informal or conversational tone throughout</td></tr>
+  <tr><td><strong>Specificity</strong></td><td>Includes specific amounts, percentages, or timeframes</td><td>Includes some specific details</td><td>Vague throughout ("save more," "spend less")</td></tr>
+  <tr><td><strong>Coherence</strong></td><td>Clear logical flow; ideas connect naturally</td><td>Mostly coherent with some gaps</td><td>Ideas disconnected or hard to follow</td></tr>
+</table>
+
+<!-- SECTION 8: DISCUSSION QUESTIONS -->
+<h2>8. Discussion Questions by Month</h2>
+<ul>
+  <li><strong>Month 1 (After Character Creation):</strong> "Did anyone choose the same path for different reasons? What does that tell us about financial decisions?"</li>
+  <li><strong>Month 2 (After First Random Event):</strong> "Did your event help or hurt? How prepared were you? What would an emergency fund have changed?"</li>
+  <li><strong>Month 4 (Mid-point check):</strong> "Compare net worth across the class. Why are some paths ahead — is it income, or spending, or luck?"</li>
+  <li><strong>Month 6 (After Artificer's Dilemma):</strong> "When is the expensive option actually the cheaper one? Give a real-world example."</li>
+  <li><strong>Month 9 (After King's Ledger):</strong> "What should the government prioritize spending on? What would you cut from the royal budget?"</li>
+  <li><strong>Month 12 (Final Results):</strong> "Who had the highest net worth? Is that person necessarily the 'winner'? What other measures of success matter?"</li>
+  <li><strong>Post-Game:</strong> "If you could replay this with a different life path, which would you choose — and would it be different from your real-life plan?"</li>
+</ul>
+
+<!-- SECTION 9: DIFFERENTIATION -->
+<h2>9. Differentiation Strategies</h2>
+<h4>For Students Who Need Support:</h4>
+<ul>
+  <li>Allow calculator use on all math quests (the concept, not the computation, is the standard)</li>
+  <li>Pair students to discuss events before writing responses</li>
+  <li>Pre-teach key vocabulary: interest, principal, opportunity cost, net worth</li>
+  <li>The Bard path's variable income can be confusing — suggest Knight or Artisan for struggling students</li>
+</ul>
+<h4>For Advanced Students:</h4>
+<ul>
+  <li>Assign Year 2 Hard Mode as enrichment</li>
+  <li>Have students create their own random event cards with correct dollar amounts and PA standard citations</li>
+  <li>Extension: Build a spreadsheet to track their actual in-game data month by month</li>
+  <li>Compare outcomes: play the same path twice and see how different random events change the result</li>
+</ul>
+
+<!-- SECTION 10: PA STANDARDS CHART -->
+<h2>10. PA Standards Alignment Chart</h2>
+<table class="event-table">
+  <tr><th>Standard</th><th>Description</th><th>Quest(s)</th><th>Events</th></tr>
+  <tr><td>17.1.6-8.B</td><td>Opportunity cost differs by person/situation</td><td>3, 9</td><td>Inflation event</td></tr>
+  <tr><td>17.1.6-8.D</td><td>Behavioral biases affecting decisions</td><td>2</td><td>FOMO event</td></tr>
+  <tr><td>17.1.9-12.A</td><td>Financial impact of long-term goals</td><td>11</td><td>—</td></tr>
+  <tr><td>17.2.6-8.A</td><td>Compensation methods comparison</td><td>—</td><td>Promotion event</td></tr>
+  <tr><td>17.2.6-8.G</td><td>Self-employment forms</td><td>—</td><td>Side hustle event</td></tr>
+  <tr><td>17.2.9-12.C</td><td>Education cost vs. future income</td><td>14</td><td>—</td></tr>
+  <tr><td>17.2.9-12.F</td><td>Employee benefits financial impact</td><td>—</td><td>Sick day event</td></tr>
+  <tr><td>17.2.9-12.H</td><td>Taxes and payroll deductions</td><td>15</td><td>Tax refund event</td></tr>
+  <tr><td>17.3.6-8.A</td><td>Informed purchase decisions</td><td>6</td><td>Axle event</td></tr>
+  <tr><td>17.3.6-8.B</td><td>Retailers' pricing methods</td><td>5</td><td>Market sale event</td></tr>
+  <tr><td>17.3.6-8.D</td><td>Personal budget components</td><td>3</td><td>—</td></tr>
+  <tr><td>17.3.6-8.L</td><td>Sales tax calculation</td><td>5</td><td>—</td></tr>
+  <tr><td>17.3.9-12.E</td><td>Personal budget creation</td><td>2</td><td>Festival event</td></tr>
+  <tr><td>17.3.9-12.J</td><td>Housing decisions</td><td>—</td><td>Rent increase event</td></tr>
+  <tr><td>17.3.9-12.K</td><td>Vehicle purchase/lease analysis</td><td>4, 6, 10</td><td>—</td></tr>
+  <tr><td>17.3.9-12.L</td><td>Sales, excise, property taxes</td><td>9</td><td>—</td></tr>
+  <tr><td>17.4.6-8.B</td><td>Creating/implementing savings plan</td><td>1</td><td>Windfall events</td></tr>
+  <tr><td>17.4.6-8.C</td><td>Simple vs. compound interest</td><td>1</td><td>—</td></tr>
+  <tr><td>17.4.6-8.G</td><td>How people make money investing</td><td>—</td><td>Dividend event</td></tr>
+  <tr><td>17.4.6-8.J</td><td>Risk tolerance and investing</td><td>—</td><td>Market crash event</td></tr>
+  <tr><td>17.4.9-12.A</td><td>Net worth calculation</td><td>16</td><td>—</td></tr>
+  <tr><td>17.4.9-12.H</td><td>Diversified investment portfolio</td><td>13</td><td>—</td></tr>
+  <tr><td>17.5.3-5.B</td><td>Emergency savings for unexpected events</td><td>—</td><td>Dragon, Tooth events</td></tr>
+  <tr><td>17.5.6-8.A</td><td>Financial risks people face</td><td>—</td><td>Flood, Plague events</td></tr>
+  <tr><td>17.5.6-8.C</td><td>Types of insurance comparison</td><td>—</td><td>Fire, Plague events</td></tr>
+  <tr><td>17.5.6-8.H</td><td>Protecting personally identifiable information</td><td>—</td><td>Pickpocket, Identity theft</td></tr>
+  <tr><td>17.5.9-12.I</td><td>Addressing financial fraud</td><td>—</td><td>Identity theft event</td></tr>
+  <tr><td>17.6.6-8.E</td><td>Total cost of credit factors</td><td>8</td><td>—</td></tr>
+  <tr><td>17.6.6-8.G</td><td>Required borrower disclosures</td><td>7</td><td>—</td></tr>
+  <tr><td>17.6.9-12.E</td><td>Total cost of credit situations</td><td>12</td><td>—</td></tr>
+</table>
+
+<div style="margin-top:32px;padding-top:16px;border-top:1px solid #BA751744;font-size:11px;color:#854F0B;text-align:center">
+  Life Quest Teacher's Guide · Created with Adventuring Portal · Paul Lazrow, Founder &amp; Storyteller · AdventuringPortal.com<br>
+  Aligned to PA Academic Standards for Personal Finance (22 Pa. Code Chapter 4, Appendix F) — Effective July 1, 2026<br>
+  <strong>Not for student distribution · May be reproduced for classroom use</strong>
+</div>
+
+</div>
+</body>
+</html>
